@@ -14,13 +14,13 @@ import java.util.*;
 
 public class Lifx {
 
-    private final static String LIFX_TOKEN = "c56c72667ce3983e3b90703d00b986d2ac7d5f2c53ac73173a44ed5bbc835126";
+    private final static String LIFX_TOKEN = "";
 
     final static String TOKEN_TYPE = "Bearer";
 
     public static boolean processPossibleCommand(String msg) {
 
-        if (LIFX_TOKEN == null || LIFX_TOKEN.equalsIgnoreCase("")) {
+        if (LIFX_TOKEN.equalsIgnoreCase("")) {
             System.out.println("Please get a token from: https://cloud.lifx.com/settings");
             return false;
         }
@@ -96,8 +96,6 @@ public class Lifx {
 	 * http://developer.lifx.com
 	 * HTTP API requiring a user's access token
 	 */
-
-    //static Client client = Client.create();
 
     final static String LIFX_API_LINK = "https://api.lifx.com/v1/lights";
     final static int LARGEST_REQUEST_LENGTH = 10;

@@ -1,9 +1,6 @@
 package utils;
 
-import java.awt.*;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Random;
 import org.apache.commons.io.IOUtils;
 
 

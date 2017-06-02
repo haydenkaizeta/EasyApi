@@ -14,10 +14,6 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-/**
- * Created by haydenchristensen on 2/11/17.
- */
-
 public class HttpMethods {
 
     private static Logger log = Logger.getLogger(HttpMethods.class.getName());

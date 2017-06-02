@@ -5,18 +5,7 @@ package utils;
 import java.util.HashMap;
 import java.util.Locale;
 
-/**
- * The Color class defines methods for creating and converting color ints.
- * Colors are represented as packed ints, made up of 4 bytes: alpha, red,
- * green, blue. The values are unpremultiplied, meaning any transparency is
- * stored solely in the alpha component, and not in the color components. The
- * components are stored as follows (alpha << 24) | (red << 16) |
- * (green << 8) | blue. Each component ranges between 0..255 with 0
- * meaning no contribution for that component, and 255 meaning 100%
- * contribution. Thus opaque-black would be 0xFF000000 (100% opaque but
- * no contributions from red, green, or blue), and opaque-white would be
- * 0xFFFFFFFF
- */
+
 public class Color {
     public static final int BLACK       = 0xFF000000;
     public static final int DKGRAY      = 0xFF444444;
@@ -207,7 +196,7 @@ public class Color {
     private static final HashMap<String, Integer> sColorNameMap;
 
     static {
-        sColorNameMap = new HashMap<String, Integer>();
+        sColorNameMap = new HashMap<>();
         sColorNameMap.put("black", BLACK);
         sColorNameMap.put("darkgray", DKGRAY);
         sColorNameMap.put("gray", GRAY);

@@ -7,9 +7,7 @@
     <groupId>haydenchristensen</groupId>
     <artifactId>easy-api</artifactId>
     <version>1.0</version>
-
-
-
+    
     <build>
         <plugins>
             <plugin>

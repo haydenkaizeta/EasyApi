@@ -8,9 +8,7 @@ import java.util.Scanner;
 public class MainClass {
 
     public static void main(String[] args) {
-
         askForUserInput();
-
     }
 
     private static void askForUserInput() {
